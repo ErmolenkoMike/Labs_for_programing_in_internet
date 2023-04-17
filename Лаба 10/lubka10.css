@@ -1,0 +1,87 @@
+.loader {
+    border: 16px solid #f3f3f3; /* серый цвет рамки */
+    border-top: 16px solid #3498db; /* синий цвет рамки */
+    border-radius: 50%; /* скругление углов для создания круга */
+    width: 120px; /* ширина и высота лоадера */
+    height: 120px;
+    animation: spin 2s linear infinite; /* добавляем анимацию */
+}
+
+@keyframes spin { /* определяем анимацию вращения */
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Стили для элементов header, main, footer */
+
+header {
+    height: 100px;
+    background-color: lightblue;
+}
+
+main {
+    height: 500px;
+    background-color: lightgray;
+    display: flex;
+}
+
+footer {
+    height: 100px;
+    background-color: lightgreen;
+}
+
+/* Стили для элементов leftPanel, content, rightPanel */
+
+div.leftPanel {
+    width: 33%;
+    background-color: orange;
+}
+
+div.content {
+    width: 33%;
+    background-color: white;
+    text-align: center;
+}
+
+div.rightPanel {
+    width: 33%;
+    background-color: purple;
+}
+
+/* Стили для кнопок в header */
+
+header button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Стили для блока Current users та New users в footer */
+
+footer div {
+    display: inline-block;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+.highlighted {
+    background-color: yellow;
+}
+tr.highlighted {
+    background-color: yellow;
+}
